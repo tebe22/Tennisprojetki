@@ -15,7 +15,8 @@ Tämän projektin avulla pystyin yhdistämään kiinnostukseni tennikseen ja ohj
 ---
 
 ## 📸 Kuvakaappaus
-![Käyttöliittymäkuvaus](![image](https://github.com/user-attachments/assets/174c9d9b-f858-4e4d-b634-c22dbf456d81)
+![Käyttöliittymäkuvaus](![image](https://github.com/user-attachments/assets/89dd0b25-d5d7-4e5b-b12a-d559daf05265)
+)
 )
 
 > Sovellus tarjoaa selkeän web-käyttöliittymän vapaita vuoroja varten. Käyttöliittymän kautta voit myös käynnistää ja sammuttaa taustalla toimivan automaattisen tarkistusskriptin.
