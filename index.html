@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Kenttävaraukset</title>
+    <meta http-equiv="refresh" content="30">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td.vapaa {
+            background-color: lightgreen;
+        }
+        td.varattu {
+            background-color: lightcoral;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Tennis Kenttävaraukset</h1>
+    
+    <form method="post" action="/toggle_script" style="text-align: center; margin-bottom: 20px;">
+        <button type="submit">
+            {% if script_running %}
+                Sammuta skripti
+            {% else %}
+                Käynnistä skripti
+            {% endif %}
+        </button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Aika</th>
+                <th>Tennis 1</th>
+                <th>Tennis 2</th>
+                <th>Tennis 3</th>
+                <th>Tennis 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for time_slot, courts in slots.items() %}
+            <tr>
+                <td>{{ time_slot }}</td>
+                {% for court in ['Tennis 1', 'Tennis 2', 'Tennis 3', 'Tennis 4'] %}
+                    {% set status = courts.get(court, "Varattu") %}
+                    <td class="{{ 'vapaa' if status == 'Vapaa' else 'varattu' }}">
+                        {% if status == 'Vapaa' %}
+                            <form method="post" action="/reserve">
+                                <input type="hidden" name="time_slot" value="{{ time_slot }}">
+                                <input type="hidden" name="court" value="{{ court }}">
+                                <button type="submit">Varaa</button>
+                            </form>
+                        {% else %}
+                            {{ status }}
+                        {% endif %}
+                    </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
