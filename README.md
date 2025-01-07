@@ -15,7 +15,8 @@ Tämän projektin avulla pystyin yhdistämään kiinnostukseni tennikseen ja ohj
 ---
 
 ## 📸 Kuvakaappaus
-![Käyttöliittymäkuvaus](![image](https://github.com/user-attachments/assets/89dd0b25-d5d7-4e5b-b12a-d559daf05265)
+![Käyttöliittymäkuvaus]![image](https://github.com/user-attachments/assets/7eb47897-a0b2-4ca8-9a77-b0f8e8475b7b)
+
 )
 )
 
