@@ -4,8 +4,19 @@ Tämä projekti on Pythonilla rakennettu sovellus, joka tarkistaa vapaat tennisv
 
 ---
 
+## 🌟 Miksi tein tämän projektin?
+
+Paikallisella hallilla tennis on erittäin suosittu harrastus, ja vapaita vuoroja on usein vaikea saada. Huomasin, että vuorojen jatkuva tarkistaminen varausjärjestelmästä oli aikaa vievää ja turhauttavaa. Tästä syntyi idea automatisoida tämä prosessi.
+
+Halusin rakentaa järjestelmän, joka tarkistaa vapaat vuorot puolestani ja ilmoittaa niistä heti sähköpostitse. Samalla päätin hyödyntää projektissa Raspberry Pi:tä palvelimen alustana ja toteuttaa turvallisen etäohjausmahdollisuuden WireGuard VPN:n avulla.
+
+Tämän projektin avulla pystyin yhdistämään kiinnostukseni tennikseen ja ohjelmointiin, ja samalla opin hyödyllisiä teknologioita, kuten Flaskia, BeautifulSoupia ja VPN-konfiguraatiota.
+
+---
+
 ## 📸 Kuvakaappaus
-![Käyttöliittymäkuvaus](static/images/screenshot.png)
+![Käyttöliittymäkuvaus](![image](https://github.com/user-attachments/assets/174c9d9b-f858-4e4d-b634-c22dbf456d81)
+)
 
 > Sovellus tarjoaa selkeän web-käyttöliittymän vapaita vuoroja varten. Käyttöliittymän kautta voit myös käynnistää ja sammuttaa taustalla toimivan automaattisen tarkistusskriptin.
 
