@@ -13,7 +13,7 @@ rakensin järjestelmän, joka tarkistaa vapaat vuorot puolestani ja ilmoittaa ni
 ---
 
 ## 📸 Kuvakaappaus
-![Käyttöliittymäkuvaus]![image](https://github.com/user-attachments/assets/7eb47897-a0b2-4ca8-9a77-b0f8e8475b7b)
+[image](https://github.com/user-attachments/assets/7eb47897-a0b2-4ca8-9a77-b0f8e8475b7b)
 
 
 
