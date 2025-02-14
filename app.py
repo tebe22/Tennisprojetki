@@ -9,9 +9,13 @@ script_running = False
 @app.route("/")
 def home():
     global script_running
-    slots = check_free_slots() if script_running else {}
+
     if script_running:
-        send_email_notification(slots)
+        slots = check_free_slots() 
+        send_email_notification(slots)  
+    else:
+        slots = {}  # Jos skripti ei ole päällä, käytetään tyhjää sanakirjaa
+
     return render_template("index.html", slots=slots, script_running=script_running)
 
 @app.route("/toggle_script", methods=["POST"])
