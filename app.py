@@ -7,8 +7,8 @@ app = Flask(__name__)
 script_running = False
 
 @app.route("/")
-def home():
-    global script_running
+ def home():
+ script_running
 
     if script_running:
         slots = check_free_slots() 
@@ -20,7 +20,7 @@ def home():
 
 @app.route("/toggle_script", methods=["POST"])
 def toggle_script():
-    global script_running
+    script_running
     script_running = not script_running
     return redirect(url_for("home"))
 
