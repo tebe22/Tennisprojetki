@@ -14,7 +14,7 @@ def home():
         slots = check_free_slots() 
         send_email_notification(slots)  
     else:
-        slots = {}  # Jos skripti ei ole päällä, käytetään tyhjää sanakirjaa
+        slots = {}  
 
     return render_template("index.html", slots=slots, script_running=script_running)
 
